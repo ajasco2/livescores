@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Image with InnerText</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="nav-link">Link 1</a>
+        <a href="#" class="nav-link">Link 2</a>
+        <a href="#" class="nav-link">Link 3</a>
+      </nav>
+      
+      <script>
+ // Get all the NavLink elements using a common class
+const navLinks = document.querySelectorAll(".nav-link");
+
+// Add a click event listener to each NavLink
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", function (event) {
+    // Prevent the default behavior of the link
+    event.preventDefault();
+
+    // Reset the background color for all NavLink elements
+    navLinks.forEach((link) => {
+      link.style.backgroundColor = "";
+    });
+
+    // Change the background color of the clicked NavLink
+    this.style.backgroundColor = "red"; // You can use any color you prefer
+  });
+});
+
+</script>
+</body>
+</html>

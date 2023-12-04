@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hammer{
+    display: none;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+nav img,.leagues img,.headline img{
+    width: 15px;
+    filter: invert();
+}
+.log{
+    display: flex;
+}
+nav{
+    padding: 10px 25px;
+    gap: 20%;
+    display: flex;
+    background-color: rgb(23, 23, 23);
+}
+.log h1{
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    padding-left: 15px;
+}
+
+.header li{
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 20px;
+}
+.man{
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 12px;
+    background-color: rgb(69, 69, 69);
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.toggle img{
+    width: 20px;
+    margin-left: 20px;
+}
+main{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    gap: 25px;
+    padding: 20px 20px 20px 20px;
+    background-color: black;
+}
+article{
+    width: 18%;
+    padding: 5px 15px 15px 15px;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+}
+.leagues{
+    padding-right: 10px;
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.leagues::selection{
+    display: none;
+}
+.list_league{
+    display: none;
+    margin-left: 25px;
+}
+.list_league img, .features img{
+   margin-right: 10px;
+   width: 20px;
+}
+.list_league ul{
+    font-size: 13px;
+    line-height: 35px;
+}
+.ads img{
+    border-radius: 15px;
+    width: 100%;
+    height: 25vh;
+}
+section{
+    width:59%;
+
+}
+.story{
+    margin-bottom: 20px;
+}
+aside{
+    padding: 20px 20px 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(23, 23, 23);
+    width: 23%;
+}
+aside h1{
+    margin-bottom: 12px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+aside h4,.league h4, .features h4{
+ font-size: 12px;   
+}
+aside p, .league p{
+    margin-top: 5px;
+    font-size: 10px;
+    color: rgb(142, 139, 139);
+}
+aside img{
+    border-radius: 7px;
+}
+.more_story a{
+    gap: 12px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.headline{
+    display: flex;
+    justify-content: space-between;
+}
+.headline li{
+    display: inline-block;
+    margin: 19px 5px 10px 5px;
+}
+.headline a{
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 12px;
+    background-color: rgb(69, 69, 69);
+}
+.header a:hover{
+    color: red;
+    filter: saturate();
+}
+
+/* .headline a:active{
+    background-color: red;
+} */
+.scores{
+    background-color: rgb(69, 69, 69);
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+.main_body{
+    background-color: rgb(23, 23, 23);
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 0px 15px 20px 15px;
+}
+.league{
+    margin: 25px 0px 10px 0px;
+    display: flex;
+    gap: 5px;
+}
+.features{
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 1px 5px 0px rgb(84, 84, 84);
+    margin-bottom: 15px;
+
+}
+    @media only screen and (max-width:850px){
+       nav .log img{
+        height: 25px;
+        width: 20px;
+        margin-top: 10px;
+       }
+       .log h1{
+        color: red;
+        font-size: 40px;
+       }
+       nav{
+        gap: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       }
+       .header li{
+        display: inline-block;
+
+       }
+      .leagues {
+        width: 100%;
+        font-size: 10px;
+        gap: 10px;
+      }
+      .leagues img{
+        width: 10px;
+      }
+      .list_league {
+        margin-left: 0px;
+      }
+      .list_league a{
+        font-size: 10px;
+        padding: 0px;
+        margin: 0px;
+      }
+      .list_league img{
+        width: 10px;
+        margin: 2px;
+        padding: 0px;
+      }
+       article{
+        width: 18%;
+        padding: 0px;
+        margin: 0px;
+       }
+       main{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+       }
+
+      section{
+        width: 100%;
+      } 
+      .ads img{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 10vh;
+      }
+      aside{
+        width: 22%;
+      }
+      
+      #competitions{
+        width: 100%;
+        display: none;
+        padding: 10px 20px;
+      }
+      .leagues{
+        font-size: 15px;
+      }
+      .list_league  a {
+        font-size: 13px;
+        padding-left: 20px;
+      }
+      .main_body{
+        margin: 5px;
+      }
+      .man a, .man li{
+        padding: 0px;
+        margin: 0px;
+      }
+      .path span{
+        font-size: 12px;
+      }
+      .features{
+         display: flex;
+         flex-direction: row;
+         gap: 0px;
+      }
+      
+      
+      .path_2{
+        display: none;
+      }
+      aside{
+        width: 100%;
+      }
+      .hammer{
+        display: block;
+        width: 20px;
+      }
+    }
